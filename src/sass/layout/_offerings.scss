@@ -1,0 +1,334 @@
+.offerings-section {
+
+    padding-top: 70px;
+    width: 100%;
+    background-image: url('../images/offerings/mobile-480.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @include tablet {
+
+        padding-top: 184px;
+        background-image: url('../images/offerings/tablet-768.svg');
+        background-size: cover;
+        padding-bottom: 100px;
+        }
+
+    @include desctop {
+        padding-top: 231px;
+        background-image: url('../images/offerings/desctop1200.svg');
+        padding-bottom: 43px;
+
+    }    
+}
+.offerings-container {
+    @include desctop {
+        display: flex;
+        column-gap: 90px;
+    }
+}
+
+
+.apple {
+    margin-bottom: 60px;
+
+    @include tablet {
+
+        display: flex;
+        align-items: flex-end;
+    }
+
+    @include desctop {
+        margin-bottom: 0;
+    }
+}
+
+.apple-medium {
+    display: none;
+
+    @include tablet {
+        display: block;
+        padding-bottom: 59px;
+        margin-right: 44px;
+    }
+    @include desctop {
+        display: none;
+    }
+}
+
+.apple-small {
+    display: none;
+
+    @include tablet {
+        display: block;
+        opacity: 0.3;
+        padding-bottom: 59px;
+    }
+    @include desctop {
+        display: none;
+    }
+}
+
+.apple-big-picture::after {
+    display: block;
+    position: absolute;
+    content: url('../images/offerings/shadow-smart.svg');
+    transform: translateY(-50px);
+    z-index: -10;
+
+    @include desctop {
+        content: url('../images/offerings/shadow-img-big.svg');
+        display: inline-block;
+        width: 252px;
+        
+        
+        
+    }
+}
+
+.apple-big {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-bcg);
+    width: 255px;
+    height: 255px;
+
+    @include tablet {
+        width: 325px;
+        height: 325px;
+    }
+
+    @include desctop {
+        width: 502px;
+        height: 502px;
+    }
+}
+
+.apple-big-picture {
+    transform: translateY(-44px);
+
+    @include tablet {
+
+    transform: translateY(-54px);
+    }
+
+     @include desctop {
+    
+    transform: translateY(-82px);
+    }
+}
+
+.apple-big-picture::after {
+    transform: translate(2px, -50px);
+    
+    @include tablet {
+        transform: translate(20px, -55px);
+    }
+
+    @include desctop {
+        transform: translate(50px, -70px);
+    }
+}
+
+
+.apple-big-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+
+    @include tablet {
+        margin: 0;
+        margin-right: 28px;
+        width: 357px;
+        height: 357px;
+    }
+    
+    @include desctop {
+        margin: 0;
+        margin-right: 28px;
+        width: 550px;
+         height: 550px;
+    }
+}
+
+.content-list{
+    list-style: none;
+    margin-bottom: 28px;
+    
+    @include tablet {
+        display: flex;
+        column-gap: 116px;
+        margin-bottom: 40px;
+        }
+
+    @include desctop {
+        column-gap: 67px;
+        margin-bottom: 35px;
+    } 
+
+}
+
+
+.content-list__item:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.content-list__item {
+    @include tablet {
+        width: 252px;
+    }
+}
+
+.content-list__item:first-child {
+    @include desctop {
+        margin-bottom: 0;
+    }
+    
+}
+
+.content-list__item:first-child::before {
+    content: url('../images/offerings/rocket_launch.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    
+}
+
+.content-list__item:last-child::before {
+    content: url('../images/offerings/touch_app.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.content-block {
+    @include desctop {
+        padding-top: 25px;
+    }
+}
+
+.content-block__title {
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--main-text);
+
+    @include tablet {
+        font-size: 42px;
+        line-height: 1.2;
+        width: 526px;
+    }
+}
+
+.content-block__subtitle {
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--main-text);
+
+    @include tablet {
+            font-size: 16px;
+            line-height: 1.2;
+            width: 500px;
+    }
+
+    @include desctop {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.content-list__title {
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-color);
+
+    @include desctop {
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    
+}
+
+.content-list__subtitle {
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--text-color);
+
+    @include desctop {
+        line-height: 1.5;
+
+    }
+}
+
+
+.interactive-block {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.interactive-block__link::after {
+    content: url('../images/offerings/vector-icon.svg');
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+}
+
+.interactive-block__btn {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+   
+    border-radius: 30px;
+    padding: 10px 22px;
+
+    background: var(--main-bcg);
+    color: var(--text-color);
+    border: 2px solid var(--accent-color-second);
+
+    &:hover,
+    &:focus {
+        background: var(--accent-color);
+    }
+}
+
+.interactive-block__link {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+    text-decoration: none;  
+    color: #000000;
+
+    @include desctop {
+        display: none;
+    }
+}
+
+

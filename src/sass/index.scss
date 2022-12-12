@@ -1,2 +1,24 @@
-@import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/container';
+@import './base/section';
+
+@import './components/link-drop';
+@import './components/list-drop';
+@import './components/page-nav';
+@import './components/mobile-menu';
+@import './components/modal';
+@import './components/modal-btn';
+@import './components/backdrop';
+
+@import './layout/customers-say';
+@import './layout/favorites';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/subscribe';
+@import './components/button-up-to-top';

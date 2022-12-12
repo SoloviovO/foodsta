@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__container container">
+        <a href="./index.html" class="logo__header">
+          <svg width="66px" height="52px">
+            <use href="./images/symbol-defs.svg#logo" class="logo__link"></use>
+          </svg>
+        </a>
+        <div class="header__list">
+          <nav class="header-page__nav">
+            <ul class="header-nav__list nav__list list-drop">
+              <li class="nav__item">
+                <a
+                  class="nav__link nav__link--current decoration"
+                  href="#header"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link decoration" href="#hero">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link decoration" href="#customers">Service</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link decoration" href="#menu">Menu</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link decoration" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn" type="button" data-modal-open2>
+            Order Now
+          </button>
+        </div>
+        <button class="mobile-btn js-open-menu" type="button">
+          <svg class="mobile-btn__icon" width="28px" height="28px">
+            <use href="./images/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+
+@mixin tablet {
+   @media screen and (min-width: $tablet){
+      @content;
+   }
+}
+
+@mixin desctop {
+   @media screen and (min-width: $desctop){
+      @content;
+   }
+}
+
+@mixin retina-bgi {
+   @media (min-device-pixel-retio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      @content;
+   }
+   
+}

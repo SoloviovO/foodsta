@@ -1,0 +1,172 @@
+.hero {
+    padding-bottom: 0;
+    @include desctop {
+        padding-top: 160px;
+    }
+}
+
+
+.hero-container {
+    position: relative;
+
+}
+
+
+.hero-container__left-side {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    align-items: flex-start;
+
+    @include tablet {
+        width: 537px;
+        row-gap: 40px;
+    }
+    @include desctop {
+        width: 502px;
+        row-gap: 28px;
+    }
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--main-text);
+
+    @include tablet {
+        font-size: 42px;
+    }
+     @include tablet {
+        font-size: 48px;
+}
+
+}
+
+.hero__discription {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--main-text);
+
+        @include tablet {
+        width: 336;
+        font-size: 16px;
+    }
+        @include desctop {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+}
+
+.hero__button {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--main-text);
+    padding: 6px 18px;
+    background: var(--accent-color);
+    border-radius: 30px;
+    border: none;
+    
+        &:hover {
+            background: var(--second-bcg);
+    }
+}
+// ----------------animation------------- //
+
+.fade {
+    animation-name: fade;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.hero-container__right-side {
+    display: none;
+
+    @include tablet {
+        display: block;
+        padding: 0 8px;
+        position: absolute;
+        right: 32;
+        top: 89;
+    }
+    @include desctop {
+        padding: 0 14px;
+        top: -145px;
+        right: 16px;
+    }
+}
+
+
+// ----------------slider------------- //
+
+.swipe-arrow-icon {
+    width: 12px;
+    height: 20px;
+
+    @include desctop {
+        width: 17px;
+        height: 29px;
+    }
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    top: 48%;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    width: 34px;
+    height: 28px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color); 
+        }
+
+    @include desctop {
+        width: 48px;
+        height: 40px;
+    }
+
+    
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.swipe-right {
+    transform: rotate(180deg);
+}
+
+.slider-img {
+    width: 320px;
+    border-radius: 50%;
+    border: 14px solid #ffe550; 
+
+    @include desctop {
+        width: 580px;
+       }
+}
+
+
+
