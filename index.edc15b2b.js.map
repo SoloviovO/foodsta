@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAMA,SAAW,IAAIC,eAAe,aAAc,CAChDC,aAAc,IACdC,aAAc","sources":["js/simplelightbox.js"],"sourcesContent":["const lightbox = new SimpleLightbox('.gallery a', {\n  captionDelay: 250,\n  captionsData: 'alt',\n})"],"names":["lightbox","SimpleLightbox","captionDelay","captionsData"],"version":3,"file":"index.edc15b2b.js.map"}
